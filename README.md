@@ -29,16 +29,22 @@ Este proyecto tiene como objetivo desarrollar y comparar chatbots utilizando dos
 4. Documentar las diferencias clave y los casos de uso ideales para cada framework
 
 ## Estructura del Proyecto
-rag_project/
-├── langchain_bot/
-│ ├── src/
-│ └── requirements.txt
-├── llamaindex_bot/
-│ ├── src/
-│ └── requirements.txt
-├── data/
-├── tests/
+.
+├── Data
+│   └── pride_and_prejudice.txt
+├── Notebooks
+│   ├── langchain-prototype.ipynb
+│   ├── llama-index-prototype.ipynb
+│   └── storage
+│       ├── default__vector_store.json
+│       ├── docstore.json
+│       ├── graph_store.json
+│       ├── image__vector_store.json
+│       └── index_store.json
 ├── README.md
+├── faiss_index
+│   ├── index.faiss
+│   └── index.pkl
 └── requirements.txt
 
 ## Instalación
