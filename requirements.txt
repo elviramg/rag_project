@@ -66,6 +66,7 @@ llama-index-question-gen-openai==0.2.0
 llama-index-readers-file==0.2.1
 llama-index-readers-llama-parse==0.3.0
 llama-index-utils-openai==0.1.0
+llama-index-vector-stores-faiss==0.2.1
 llama-parse==0.5.5
 llama_cpp_python==0.2.90
 MarkupSafe==2.1.5
