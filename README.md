@@ -29,7 +29,8 @@ Este proyecto tiene como objetivo desarrollar y comparar chatbots utilizando dos
 4. Documentar las diferencias clave y los casos de uso ideales para cada framework
 
 ## Estructura del Proyecto
-.
+```bash
+RAG_PROJECT
 ├── Data
 │   └── pride_and_prejudice.txt
 ├── Notebooks
@@ -46,6 +47,7 @@ Este proyecto tiene como objetivo desarrollar y comparar chatbots utilizando dos
 │   ├── index.faiss
 │   └── index.pkl
 └── requirements.txt
+```
 
 ## Instalación
 
