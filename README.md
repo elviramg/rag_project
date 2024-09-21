@@ -25,28 +25,44 @@ This project aims to build and compare chatbots using two popular AI frameworks:
 
 1. Build a chatbot using LangChain.
 2. Build a similar chatbot using LlamaIndex.
-3. Compare the performance, ease of use, and features of both frameworks.
-4. Document key differences and ideal use cases for each framework.
+3. Build a web app interface to Interact with both ChatBots prototypes 
 
 ## Project Structure
 ```bash
-RAG_PROJECT
-├── Data
+RAG_PROJECT/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── langchain_bot.py
+│   ├── llama_index_bot.py
+│   └── chat.py
+│
+├── data/
 │   └── pride_and_prejudice.txt
-├── Notebooks
+│
+├── notebooks/
 │   ├── langchain-prototype.ipynb
-│   ├── llama-index-prototype.ipynb
-│   └── storage
-│       ├── default__vector_store.json
-│       ├── docstore.json
-│       ├── graph_store.json
-│       ├── image__vector_store.json
-│       └── index_store.json
+│   └── llama-index-prototype.ipynb
+│
+├── persistence/
+│   ├── langchain/
+│   │   ├── faiss_index/
+│   │   │   ├── index.faiss
+│   │   │   └── index.pkl
+│   └── llama_index/
+│       └── storage/
+│           ├── default__vector_store.json
+│           ├── docstore.json
+│           ├── graph_store.json
+│           ├── image__vector_store.json
+│           └── index_store.json
+│
+├── config.py
+├── requirements.txt
 ├── README.md
-├── faiss_index
-│   ├── index.faiss
-│   └── index.pkl
-└── requirements.txt
+└── .env
+```
 
 ## Installation
 
