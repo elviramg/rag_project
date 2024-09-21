@@ -1,34 +1,34 @@
-# Proyecto de Comparación de Chatbots: LangChain vs LlamaIndex
+# Chatbot Comparison Project: LangChain vs LlamaIndex
 
-## Introducción 
+## Introduction
 
 ### RAG (Retrieval-Augmented Generation)
 
-RAG, o Generación Aumentada por Recuperación, es un enfoque innovador en el campo de la Inteligencia Artificial que combina la potencia de los modelos de lenguaje grandes (LLMs) con la capacidad de recuperar información específica de una base de conocimientos externa. Este método permite a los sistemas de IA generar respuestas más precisas, actualizadas y contextualizadas.
+RAG, or Retrieval-Augmented Generation, is a new approach in AI that mixes large language models (LLMs) with information from external sources. This method helps AI systems give more accurate and up-to-date answers.
 
-En un sistema RAG:
-1. Se recupera información relevante de una base de datos o fuente externa.
-2. Esta información se combina con la consulta del usuario.
-3. El LLM utiliza ambos inputs para generar una respuesta informada y precisa.
+In a RAG system:
+1. Information is pulled from an external database or source.
+2. This information is combined with the user's question.
+3. The LLM uses both to create a more informed and accurate response.
 
-Los sistemas RAG son especialmente útiles para chatbots y asistentes virtuales, ya que pueden proporcionar respuestas basadas en información actualizada y específica, superando las limitaciones de los modelos pre-entrenados.
+RAG systems are great for chatbots and virtual assistants because they can give answers based on real-time information, going beyond the limitations of pre-trained models.
 
-![Diagrama RAG](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DZwcPDr0z3QghwxG_H7qnQ.png)
+![RAG Diagram](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DZwcPDr0z3QghwxG_H7qnQ.png)
 
-*Figura 1: Diagrama conceptual de un sistema RAG*
+*Figure 1: Conceptual diagram of a RAG system*
 
-## Descripción del Proyecto
+## Project Overview
 
-Este proyecto tiene como objetivo desarrollar y comparar chatbots utilizando dos frameworks populares para la creación de aplicaciones de IA: LangChain y LlamaIndex. El propósito es explorar las diferencias, ventajas y desventajas de cada framework en el contexto de la creación de chatbots basados en RAG.
+This project aims to build and compare chatbots using two popular AI frameworks: LangChain and LlamaIndex. The goal is to explore the differences, pros, and cons of each framework when building RAG-based chatbots.
 
-## Objetivos
+## Goals
 
-1. Desarrollar un chatbot utilizando LangChain
-2. Desarrollar un chatbot similar utilizando LlamaIndex
-3. Comparar el rendimiento, facilidad de uso y características de ambos frameworks
-4. Documentar las diferencias clave y los casos de uso ideales para cada framework
+1. Build a chatbot using LangChain.
+2. Build a similar chatbot using LlamaIndex.
+3. Compare the performance, ease of use, and features of both frameworks.
+4. Document key differences and ideal use cases for each framework.
 
-## Estructura del Proyecto
+## Project Structure
 ```bash
 RAG_PROJECT
 ├── Data
@@ -47,33 +47,23 @@ RAG_PROJECT
 │   ├── index.faiss
 │   └── index.pkl
 └── requirements.txt
+
+## Installation
+
+1. Make sure you have pyenv installed.
+2. Clone this repository:
 ```
-
-## Instalación
-
-1. Asegúrate de tener pyenv instalado en tu sistema.
-
-2. Clona este repositorio:
-   ```
-   git clone https://github.com/elviramg/rag_project.git
-   cd rag_project
-   ```
-
-3. Activa el entorno virtual existente:
-   ```
-   pyenv activate langchain_rag
-   ```
-
-4. Instala las dependencias del proyecto:
-   ```
-   pip install -r requirements.txt
-   ```
-
-5. Configura las variables de entorno necesarias:
-   - Crea un archivo `.env` en la raíz del proyecto.
-   - Añade las variables necesarias, como la clave API de OpenAI:
-     ```
-     OPENAI_API_KEY=tu_clave_api_aqui
-     ```
-
-6. Ahora estás listo para ejecutar los notebooks y scripts del proyecto.
+git clone https://github.com/elviramg/rag_project.git cd rag_project
+```
+3. Activate the virtual environment:
+4. Install the project dependencies:
+```
+pip install -r requirements.txt
+```
+5. Set up environment variables:
+- Create a `.env` file at the root of the project.
+- Add the necessary variables, such as the OpenAI API key:
+  ```
+  OPENAI_API_KEY=your_api_key_here
+  ```
+6. You are now ready to run the notebooks and project scripts.
