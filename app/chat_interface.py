@@ -1,7 +1,13 @@
+import os
 import gradio as gr
 from langchain_bot import LangChainBot, LangChainBotException, QueryProcessingError
 
-langchain_bot = LangChainBot("../persistence/langchain/faiss_index")
+
+def get_faiss_index_path():
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    return os.path.join(project_root, 'persistence', 'langchain', 'faiss_index')
+
+langchain_bot = LangChainBot(get_faiss_index_path())
 
 def chat(message, history):
     try:
