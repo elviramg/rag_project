@@ -1,12 +1,9 @@
-import os
-from dotenv import load_dotenv
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import ConversationalRetrievalChain
 
-load_dotenv()
 
 class LangChainBotException(Exception):
     """Base exception class for LangChainBot"""
