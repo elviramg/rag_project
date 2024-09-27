@@ -33,7 +33,11 @@ def create_chat_interface():
     with gr.Blocks() as interface:
         gr.Markdown("# Jane Austen Style Love Advisor")
         
-        chatbot = gr.Chatbot()
+        chatbot = gr.Chatbot(
+            value=[
+                (None, "Welcome, dear friend, to our quaint parlor of romantic counsel. Pray, what matters of the heart shall we discuss today?")
+            ]
+        )
         msg = gr.Textbox(label="Your question")
         clear = gr.Button("Clear")
 

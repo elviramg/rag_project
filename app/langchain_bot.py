@@ -63,6 +63,9 @@ class LangChainBot:
     def query(self, question: str, chat_history: list = None) -> str:
         try:
             result = self.rag_chain({"question": question, "chat_history": chat_history or []})
-            return result['answer']
+            answer = result.get('answer')
+            if answer is None:
+                return "Sorry, I couldn't generate a response. Could you rephrase your question?"
+            return answer
         except Exception as e:
             raise QueryProcessingError(f"Error processing query: {str(e)}")
